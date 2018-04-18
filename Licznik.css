@@ -1,0 +1,103 @@
+body
+{
+	background-color:#29293d;
+	font-family: 'Anonymous Pro', monospace;
+}
+
+#kontener
+{
+	width:1000px;
+	margin-left:auto;
+	margin-right:auto;
+	font-size:10px;
+	
+}
+
+#tytul
+{
+	background-image: url(img/terra.jpg);
+	text-align: center;
+	background-position: center;
+	font-size: 60px;
+	color: black;
+	letter-spacing: 5px;
+	
+	
+}
+
+.gracz
+{
+	background-color:#ffffb3;
+	
+}
+
+.imie
+{	
+	border: 5px solid red;
+	text-align: center;
+	padding:5px;
+}
+
+.surowiec
+{
+	border: 5px solid green;
+	background-color:#29293d;
+	margin:10px;
+	padding: 50px;
+	width: 200px;
+	float:left;
+	
+	
+}
+
+.nazwa_surowca
+{
+	width:90px;
+	float:left;
+	
+	
+}
+
+.plus
+{
+	border: 3px solid black;
+	background-color: green;
+	cursor:pointer;
+	filter: brightness(70%);
+}
+
+.minus
+{
+	border: 3px solid black;
+	background-color: red;
+	cursor:pointer;
+	filter: brightness(70%);
+}
+
+.plus:hover
+{
+ border-color: #e6e600;	
+ filter: brightness(100%);
+}
+
+.minus:hover
+{
+ border-color: #e6e600;	
+ filter: brightness(100%);
+}
+
+.tura
+{
+	clear:both; 
+	width: 200px;
+	text-align:center;
+	margin-left:auto;
+	margin-right:auto;
+	padding:3px;
+	border: 3px dotted red;
+	cursor: pointer;
+}
+.tura:hover
+{
+	background-color: yellow;
+}
