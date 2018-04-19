@@ -1,6 +1,6 @@
 body
 {
-	background-color:#29293d;
+	background-color:#0d0d26;
 	font-family: 'Anonymous Pro', monospace;
 }
 
@@ -27,26 +27,33 @@ body
 
 .gracz
 {
-	background-color:#ffffb3;
-	
+	background-image:url(img/terra2.jpg)
+
 }
 
 .imie
 {	
-	border: 5px solid red;
+	background-color:#29293d;
+	color: red;
+	width: 150px;
+	margin-left:auto;
+	margin-right:auto;
 	text-align: center;
 	padding:5px;
+	border: 3px solid red;
+	font-size: 32px;
 }
 
 .surowiec
 {
 	border: 5px solid green;
-	background-color:#29293d;
+	background-color:#79893d;
 	margin:10px;
 	padding: 50px;
 	width: 200px;
+	height: 120px;
 	float:left;
-	
+	border-radius: 25px;
 	
 }
 
@@ -64,6 +71,9 @@ body
 	background-color: green;
 	cursor:pointer;
 	filter: brightness(70%);
+	font-size: 15px;
+	padding: 2px;
+	
 }
 
 .minus
@@ -72,6 +82,8 @@ body
 	background-color: red;
 	cursor:pointer;
 	filter: brightness(70%);
+	font-size: 15px;
+	padding: 2px;
 }
 
 .plus:hover
@@ -89,13 +101,18 @@ body
 .tura
 {
 	clear:both; 
-	width: 200px;
+	width: 80px;
+	height: 34px;
 	text-align:center;
 	margin-left:auto;
 	margin-right:auto;
 	padding:3px;
 	border: 3px dotted red;
 	cursor: pointer;
+	color: red;
+	background-color:#29293d;
+	padding-top: 6px;
+	padding-bottom: 10px;
 }
 .tura:hover
 {
