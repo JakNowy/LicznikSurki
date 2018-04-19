@@ -25,26 +25,26 @@
 
 		
 		<div class='surowiec'>
-		
+			
 			<div class='zasób'> 
-				<div class='nazwa_surowca'>hajs:</div><span id='1-1-1'>20</span> 
+				<div class='nazwa_surowca'>hajs:</div><span id='hajsID'>20</span> 
 					<div>
 					<p/>
-						<span class='plus' onclick='alert("dodaje")'>+1</span>
-						<span class='minus' onclick='odejmij()'>-1</span>
-						<span class='plus' onclick='gracz1.dodajHajs'>+5</span>
-						<span class='minus' onclick=dodaj(gracz1.hajs, -5)>-5</span>
+						<span class='plus' onclick='gracz1.dodajHajs(1)'>+1</span>
+						<span class='minus' onclick='gracz1.dodajHajs(-1)'>-1</span>
+						<span class='plus' onclick='gracz1.dodajHajs(+5)'>+5</span>
+						<span class='minus' onclick='gracz1.dodajHajs(-5)'>-5</span>
 					<p/>
 					</div>
 			</div>
 		
 			
 			<div class='przyrost'> 
-				<div class='nazwa_surowca'>Przyrost:</div><span id='1-1-2'>1</span>
+				<div class='nazwa_surowca'>Przyrost:</div><span id='hajsP'>1</span>
 				<div>
 					<p/>
-						<span class='plus' onclick=przyrost(gracz1.hajs_p, 1)>+1</span>
-						<span class='minus' onclick=przyrost(gracz1.hajs_p, 1)>-1</span>
+						<span class='plus' onclick='gracz1.przyrostHajs(+1)'>+1</span>
+						<span class='minus' onclick='gracz1.przyrostHajs(-1)'>-1</span>
 					<p/>
 				</div>
 			</div>
@@ -52,24 +52,24 @@
 		<div class='surowiec'>
 		
 			<div class='zasób'> 
-				<div class='nazwa_surowca'>zelazo:</div><span id='1-1-1'>20</span> 
+				<div class='nazwa_surowca'>zelazo:</div><span id='zelazoID'>0</span> 
 					<div>
 					<p/>
-						<span class='plus' onclick=dodaj(gracz1.zelazo, 1)>+1</span>
-						<span class='minus' onclick=dodaj(gracz1.zelazo, -1)>-1</span>
-						<span class='plus' onclick=dodaj(gracz1.zelazo, 5)>+5</span>
-						<span class='minus' onclick=dodaj(gracz1.zelazo, -5)>-5</span>
+						<span class='plus' onclick='gracz1.dodajZelazo(1)'>+1</span>
+						<span class='minus' onclick='gracz1.dodajZelazo(-1)'>-1</span>
+						<span class='plus' onclick='gracz1.dodajZelazo(+5)'>+5</span>
+						<span class='minus' onclick='gracz1.dodajZelazo(-5)'>-5</span>
 					<p/>
 					</div>
 			</div>
 		
 			
 			<div class='przyrost'> 
-				<div class='nazwa_surowca'>Przyrost:</div><span id='1-1-2'>1</span>
+				<div class='nazwa_surowca'>Przyrost:</div><span id='zelazoP'>1</span>
 				<div>
 					<p/>
-						<span class='plus' onclick=przyrost(gracz1.zelazo_p, 1)>+1</span>
-						<span class='minus' onclick=przyrost(gracz1.zelazo_p, 1)>-1</span>
+						<span class='plus' onclick='gracz1.przyrostZelazo(+1)'>+1</span>
+						<span class='minus' onclick='gracz1.przyrostZelazo(-1)'>-1</span>
 					<p/>
 				</div>
 			</div>
@@ -78,24 +78,24 @@
 				<div class='surowiec'>
 		
 			<div class='zasób'> 
-				<div class='nazwa_surowca'>tytan:</div><span id='1-1-1'>20</span> 
+				<div class='nazwa_surowca'>tytan:</div><span id='tytanID'>0</span> 
 					<div>
 					<p/>
-						<span class='plus' onclick=dodaj(gracz1.tytan, 1)>+1</span>
-						<span class='minus' onclick=dodaj(gracz1.tytan,-1)>-1</span>
-						<span class='plus' onclick=dodaj(gracz1.tytan, 5)>+5</span>
-						<span class='minus' onclick=dodaj(gracz1.tytan, -5)>-5</span>
+						<span class='plus' onclick='gracz1.dodajTytan(1)'>+1</span>
+						<span class='minus' onclick='gracz1.dodajTytan(-1)'>-1</span>
+						<span class='plus' onclick='gracz1.dodajTytan(+5)'>+5</span>
+						<span class='minus' onclick='gracz1.dodajTytan(-5)'>-5</span></span>
 					<p/>
 					</div>
 			</div>
 		
 			
 			<div class='przyrost'> 
-				<div class='nazwa_surowca'>Przyrost:</div><span id='1-1-2'>1</span>
+				<div class='nazwa_surowca'>Przyrost:</div><span id='tytanP'>1</span>
 				<div>
 					<p/>
-						<span class='plus' onclick=przyrost(gracz1.tytan_p, 1)>+1</span>
-						<span class='minus' onclick=przyrost(gracz1.tytan_p, 1)>-1</span>
+						<span class='plus' onclick='gracz1.przyrostTytan(+1)'>+1</span>
+						<span class='minus' onclick='gracz1.przyrostTytan(-1)'>-1</span>
 					<p/>
 				</div>
 			</div>
@@ -103,24 +103,24 @@
 						<div class='surowiec'>
 		
 			<div class='zasób'> 
-				<div class='nazwa_surowca'>rosliny:</div><span id='r'>20</span> 
+				<div class='nazwa_surowca'>rosliny:</div><span id='roslinnoscID'>0</span> 
 					<div>
 					<p/>
-						<button class='plus' onclick='gracz1.dodajTytan'>+1</button>
-						<span class='minus' onclick='gracz1.dodajTytan'>-1</span>
-						<span class='plus' onclick='gracz1.dodajTytan(5)'>+5</span>
-						<span class='minus' onclick='gracz1.dodajTytan'>-5</span>
+						<span class='plus' onclick='gracz1.dodajRoslinnosc(1)'>+1</span>
+						<span class='minus' onclick='gracz1.dodajRoslinnosc(-1)'>-1</span>
+						<span class='plus' onclick='gracz1.dodajRoslinnosc(+5)'>+5</span>
+						<span class='minus' onclick='gracz1.dodajRoslinnosc(-5)'>-5</span>
 					<p/>
 					</div>
 			</div>
 		
 			
 			<div class='przyrost'> 
-				<div class='nazwa_surowca'>Przyrost:</div><span id='rp'>1</span>
+				<div class='nazwa_surowca'>Przyrost:</div><span id='roslinnoscP'>1</span>
 				<div>
 					<p/>
-						<span class='plus' onclick=przyrost(gracz1.roslinnosc_p, 1)>+1</span>
-						<span class='minus' onclick=przyrost(gracz1.roslinnosc_p, 1)>-1</span>
+						<span class='plus' onclick='gracz1.przyrostRoslinnosc(+1)'>+1</span>
+						<span class='minus' onclick='gracz1.przyrostRoslinnosc(-1)'>-1</span>
 					<p/>
 				</div>
 			</div>
@@ -128,24 +128,24 @@
 						<div class='surowiec'>
 		
 			<div class='zasób'> 
-				<div class='nazwa_surowca'>energia:</div><span id='1-1-1'>20</span> 
+				<div class='nazwa_surowca'>energia:</div><span id='energiaID'>0</span> 
 					<div>
 					<p/>
-						<span class='plus' onclick=dodaj(gracz1.energia, 1)>+1</span>
-						<span class='minus' onclick=dodaj(gracz1.energia, -1)>-1</span>
-						<span class='plus' onclick=dodaj(gracz1.energia, 5)>+5</span>
-						<span class='minus' onclick=dodaj(gracz1.energia, -5)>-5</span>
+						<span class='plus' onclick='gracz1.dodajEnergia(1)'>+1</span>
+						<span class='minus' onclick='gracz1.dodajEnergia(-1)'>-1</span>
+						<span class='plus' onclick='gracz1.dodajEnergia(+5)'>+5</span>
+						<span class='minus' onclick='gracz1.dodajEnergia(-5)'>-5</span>
 					<p/>
 					</div>
 			</div>
 		
 			
 			<div class='przyrost'> 
-				<div class='nazwa_surowca'>Przyrost:</div><span id='1-1-2'>1</span>
+				<div class='nazwa_surowca'>Przyrost:</div><span id='energiaP'>1</span>
 				<div>
 					<p/>
-						<span class='plus' onclick=przyrost(gracz1.energia_p, 1)>+1</span>
-						<span class='minus' onclick=przyrost(gracz1.energia_p, 1)>-1</span>
+						<span class='plus' onclick='gracz1.przyrostEnergia(+1)'>+1</span>
+						<span class='minus' onclick='gracz1.przyrostEnergia(-1)'>-1</span>
 					<p/>
 				</div>
 			</div>
@@ -154,30 +154,30 @@
 						<div class='surowiec'>
 		
 			<div class='zasób'> 
-				<div class='nazwa_surowca'>cieplo:</div><span id='1-1-1'>20</span> 
+				<div class='nazwa_surowca'>cieplo:</div><span id='cieploID'>0</span> 
 					<div>
 					<p/>
-						<span class='plus' onclick=dodaj(gracz1.cieplo, 1)>+1</span>
-						<span class='minus' onclick=dodaj(gracz1.cieplo, -1)>-1</span>
-						<span class='plus' onclick=dodaj(gracz1.cieplo, 5)>+5</span>
-						<span class='minus' onclick=dodaj(gracz1.cieplo, -5)>-5</span>
+						<span class='plus' onclick='gracz1.dodajCieplo(1)'>+1</span>
+						<span class='minus' onclick='gracz1.dodajCieplo(-1)'>-1</span>
+						<span class='plus' onclick='gracz1.dodajCieplo(+5)'>+5</span>
+						<span class='minus' onclick='gracz1.dodajCieplo(-5)'>-5</span>
 					<p/>
 					</div>
 			</div>
 		
 			
 			<div class='przyrost'> 
-				<div class='nazwa_surowca'>Przyrost:</div><span id='1-1-2'>1</span>
+				<div class='nazwa_surowca'>Przyrost:</div><span id='cieploP'>1</span>
 				<div>
 					<p/>
-						<span class='plus' onclick=przyrost(gracz1.cieplo_p, 1)>+1</span>
-						<span class='minus' onclick=przyrost(gracz1.cieplo_p, 1)>-1</span>
+						<span class='plus' onclick='gracz1.przyrostCieplo(+1)'>+1</span>
+						<span class='minus' onclick='gracz1.przyrostCieplo(-1)'>-1</span>
 					<p/>
 				</div>
 			</div>
 		</div>	
 		
-		<div class='tura'> Koniec tury</div>
+		<div class='tura' onclick='koniecTury()'> Koniec tury</div>
 		
 
 	
